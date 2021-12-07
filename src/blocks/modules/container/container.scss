@@ -1,0 +1,37 @@
+.container {
+    max-width: 100%;
+    width: rem(1090);
+    padding-left: rem(10);
+    padding-right: rem(10);
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    transition: .2s;
+
+    @include rmin (1440) {
+        width: rem(1070);
+    }
+
+    @include rmin (1024) {
+        width: rem(912);
+    }
+
+    @include rmin (768) {
+        width: rem(608);
+    }
+
+    @include rmin (425) {
+        width: rem(395);
+
+    }
+
+    @include rmin (375) {
+        width: rem(335)
+    }
+
+    @include rmin(320) {
+        width: rem(300);
+
+    }
+
+}

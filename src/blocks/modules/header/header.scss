@@ -1,0 +1,25 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding-top: rem(40);
+
+    &__logo {}
+
+    &__menu {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__link {
+        font-weight: bold;
+        font-size: 15px;
+        line-height: 20px;
+        color: #696871;
+        margin-left: rem(50);
+        margin-right: rem(50);
+
+        &--active {
+            color: #19191B;
+        }
+    }
+}
