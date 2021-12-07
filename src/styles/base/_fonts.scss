@@ -9,5 +9,12 @@
     font-family: 'My Font';
     src: url('../../fonts/Mulish-Bold.woff2') format('woff2'),
         url('../../fonts/Mulish-Bold.woff') format('woff');
-    font-weight: 700;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family:'DM Sans';
+    src: url('../../fonts/DMSans-Bold.woff2') format('woff2'),
+        url('../../fonts/DMSans-Bold.woff') format('woff');
+    font-weight: bold;
 }
