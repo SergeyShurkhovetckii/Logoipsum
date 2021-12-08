@@ -1,4 +1,4 @@
-h1, h2, h3, h4, h5, h6, ul {
+h1, h2, h3, h4, h5, h6, ul ,p{
     margin: 0;
     padding: 0;
 }
@@ -7,6 +7,10 @@ body{
     font-size: 20px;
     line-height: 30px;
     color: #696871;
+}
+img{
+    width: 100%;
+    height: auto;
 }
 
 li{
@@ -21,10 +25,27 @@ a:hover{
     opacity: 0.7;
 }
 
+h2{
+    font-family: $dm;
+    font-weight: bold;
+    font-size: rem(80);
+    line-height: rem(77);
+    color: #19191B;
+    @include w(1024){
+        font-size: rem(40);
+        line-height: rem(38);
+    }
+}
+
 
 .btn {
+    cursor: pointer;
     &--orange {
         background: #FF7143;
+        border-radius: 10px;
+    }
+    &--blue{
+        background: #5454D4;
         border-radius: 10px;
     }
     &--orange:hover {
