@@ -1,13 +1,19 @@
-.header {
-    display: flex;
-    justify-content: space-between;
+.header-scroll {
+    width: 100%;
     padding-top: rem(40);
     @include w(1440) {
-        align-items: center;
         padding-top: rem(20);
     }
     @include w(1024){
         padding-top: rem(10);
+    }
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    
+    @include w(1440) {
+        align-items: center;
     }
     &__logo img{
         width: rem(200);
@@ -81,4 +87,26 @@
     font-size: rem(16);
     line-height: rem(30);
     font-family: $ml;
+}
+
+
+.header--fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    transition: 0.2s;
+    padding-top: rem(30);
+    padding-bottom: rem(10);
+    background: #fff;
+    -webkit-box-shadow: 4px 10px 11px 1px rgba(25, 25, 27, 0.2);
+    -moz-box-shadow: 4px 10px 11px 1px rgba(25, 25, 27, 0.2);
+    box-shadow: 4px 10px 11px 1px rgba(25, 25, 27, 0.2);
+    @include w (1440){
+        padding-top: rem(20);
+    }
+    @include w(1024){
+        padding-top: rem(10);
+    }
 }

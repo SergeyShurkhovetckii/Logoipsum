@@ -6,6 +6,7 @@
         }
         @include w(1024){
             width: 100%;
+            padding-top: rem(30);
         }
     }
 
@@ -16,11 +17,11 @@
         margin-top: rem(100);
         @include w(1024){
             flex-direction: column;
-            margin-top: rem(60);
+            margin-top: rem(0);
         }
-        @include w(768){
-            margin-top: rem(30);
-        }
+        // @include w(768){
+        //     margin-top: rem(30);
+        // }
     }
 }
 
