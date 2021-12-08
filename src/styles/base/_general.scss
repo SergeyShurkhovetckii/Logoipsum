@@ -21,3 +21,16 @@ a:hover{
     opacity: 0.7;
 }
 
+
+.btn {
+    &--orange {
+        background: #FF7143;
+        border-radius: 10px;
+    }
+    &--orange:hover {
+        background: #5454D4;
+        transition: 0.5s;
+    }
+}
+
+

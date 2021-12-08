@@ -6,21 +6,47 @@
     &__logo {}
 
     &__menu {
+        @include w(1440) {
+            display: none;
+            visibility: hidden;
+        }
     }
 
     &__link {
-        font-family: 'DM Sans';
+        font-family: $dm;
         font-weight: bold;
         font-size: 15px;
         line-height: 20px;
         color: #696871;
-        margin-left: rem(50);
         margin-right: rem(50);
         padding-bottom: rem(10);
-
         &--active {
             color: #19191B;
             border-bottom: 2px solid #5454D4;
+        }
+        &:first-child{
+            margin-left: rem(0);
+        }
+        &:last-child{
+            margin-right: rem(0);
+        }
+    }
+
+    &__btn {
+        display:block;
+        visibility:visible;
+        cursor: pointer;
+        padding-bottom: rem(19);
+        padding-top: rem(19);
+        padding-left: rem(60);
+        padding-right: rem(60);
+        color: #fff;
+        font-family: $dm;
+        font-size: 17px;
+        line-height: 22px;
+        @include w(1440){
+            display: none;
+            visibility: hidden;
         }
     }
 }

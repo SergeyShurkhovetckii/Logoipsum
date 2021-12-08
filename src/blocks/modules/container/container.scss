@@ -13,20 +13,20 @@
     }
 
     @include rmin (1024) {
-        width: rem(912);
+        width: rem(1004);
     }
 
     @include rmin (768) {
-        width: rem(608);
+        width: rem(748);
     }
 
     @include rmin (425) {
-        width: rem(395);
+        width: rem(405);
 
     }
 
     @include rmin (375) {
-        width: rem(335)
+        width: rem(355)
     }
 
     @include rmin(320) {
