@@ -1,0 +1,75 @@
+.price {
+    margin-top: rem(150);
+    @include w (768){
+        margin-top: rem(30);
+    }
+}
+
+.price-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include w (1024){
+        flex-direction: column;
+        padding-bottom: rem(30);
+    }
+    &__title {
+        width: calc(100% / 12 * 6);
+        @include w (1024){
+            width: 100%;
+            font-size: rem(40);
+            line-height: rem(38);
+            padding-bottom: rem(30);
+        }
+        font-family:$dm;
+        font-weight: bold;
+        font-size: rem(60);
+        line-height: rem(70);
+        color: #19191B;
+
+    }
+    &__btns {
+        width:calc(100% / 12 * 4);
+        @include w (1024){
+            width: auto;
+        }
+        background: #F7F7FB;
+        border-radius: 10px;
+        display:flex;
+        padding-top: rem(5);
+        padding-bottom: rem(5);
+        padding-left: rem(5);
+        padding-right: rem(5);
+        
+    }
+    &__yearly {
+        border-radius: 10px 0px 0px 10px;
+        padding-top: rem(18);
+        padding-bottom: rem(18);
+        padding-left: rem(57);
+        padding-right: rem(57);
+    }
+    &__monthly {
+        padding-top: rem(18);
+        padding-bottom: rem(18);
+        padding-left: rem(57);
+        padding-right: rem(57);
+    }
+}
+
+.price--active{
+    background: #5454D4;
+    color: #fff;
+    border-radius: 10px 0px 0px 10px;
+}
+
+.price-top-btn {
+    cursor: pointer;
+    font-family:$dm;
+    font-weight: bold;
+    font-size: rem(16);
+    line-height: rem(21);
+    color: #19191B;
+    }
+
+

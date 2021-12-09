@@ -1,0 +1,43 @@
+.cards {
+    margin-top: rem(138);
+    @include w(768){
+        margin-top: rem(30);
+    }
+
+    &__card {
+        text-align: center;
+        width: calc(33% - 35px);
+
+        @include w (768) {
+            width: 100%;
+            padding-bottom: rem(30);
+        }
+    }
+
+    &__img {
+        padding-bottom: rem(7);
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+
+        @include w(768) {
+            flex-direction: column;
+        }
+    }
+
+    &__text {
+        font-family: $ml;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        color: #696871;
+    }
+
+    &__title {
+
+        padding-bottom: rem(20);
+
+    }
+}

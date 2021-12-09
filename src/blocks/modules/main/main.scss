@@ -24,7 +24,7 @@
             padding-bottom: rem(0);
         }
         @include w(768){
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
         // @include w(768){
         //     margin-top: rem(30);
