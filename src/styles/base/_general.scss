@@ -37,6 +37,34 @@ h2{
     }
 }
 
+h3{
+    font-family: $dm;
+    font-style: normal;
+    font-weight: bold;
+    font-size: rem(50);
+    line-height: rem(57);
+    color: #19191B;
+    @include w(1024){
+        font-size: rem(40);
+        line-height: rem(38);
+    }
+}
+
+
+.link{
+    &--blue a{
+        color: #5454D4;
+        font-family: $dm;
+        font-style: normal;
+        font-weight: bold;
+        font-size: rem(17);
+        line-height: rem(22); 
+    }
+    &--blue a:hover{
+        color: #FF7143;
+    }
+}
+
 
 .btn {
     cursor: pointer;
@@ -51,6 +79,9 @@ h2{
     &--orange:hover {
         background: #5454D4;
         transition: 0.5s;
+        -webkit-box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
+        -moz-box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
+        box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
     }
     &--blue:hover{
         background: #F7F6FB;

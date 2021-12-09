@@ -1,0 +1,41 @@
+.depth {
+    margin-top: rem(83);
+
+    @include w(1024) {
+        margin-top: rem(30);
+    }
+
+    &__col {
+        width: calc(50% - 60px);
+
+        @include w (1440) {
+            width: calc(50% - 30px);
+        }
+
+        @include w(1024) {
+            width: 50%;
+        }
+
+        @include w(768) {
+            width: 100%;
+            padding-bottom: rem(30);
+        }
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include w (768){
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__text {
+        padding-bottom: rem(30);
+    }
+
+    &__title {
+        padding-bottom: rem(30);
+    }
+}

@@ -5,8 +5,11 @@
             width:50%;
         }
         @include w(1024){
-            width: 100%;
+            width: 50%;
             padding-top: rem(30);
+        }
+        @include w(768){
+            width: 100%;
         }
     }
 
@@ -15,9 +18,13 @@
         justify-content: space-between;
         align-items: center;
         margin-top: rem(100);
+        padding-bottom: rem(100);
         @include w(1024){
-            flex-direction: column;
             margin-top: rem(0);
+            padding-bottom: rem(0);
+        }
+        @include w(768){
+            flex-direction: column;
         }
         // @include w(768){
         //     margin-top: rem(30);

@@ -6,7 +6,8 @@
     margin-left: auto;
     margin-right: auto;
     position: relative;
-    transition: .2s;
+    transition: .1s;
+    overflow-x: hidden;
 
     @include rmin (1440) {
         width: rem(1070);
@@ -18,6 +19,14 @@
 
     @include rmin (768) {
         width: rem(748);
+    }
+
+    @include rmin (640) {
+        width: rem(620);
+    }
+
+    @include rmin (576) {
+        width: rem(556);
     }
 
     @include rmin (425) {

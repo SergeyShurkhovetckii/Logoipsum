@@ -73,7 +73,8 @@
     "dependencies": {
         "jquery": "^3.4.1",
         "mmenu-js": "^8.5.3",
-        "smart-grid": "^2.1.2"
+        "smart-grid": "^2.1.2",
+        "swiper": "^5.4.5"
     },
     "lint-staged": {
         "!(_*).scss": [
