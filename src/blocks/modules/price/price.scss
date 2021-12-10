@@ -1,6 +1,7 @@
 .price {
     margin-top: rem(150);
-    @include w (768){
+
+    @include w (768) {
         margin-top: rem(30);
     }
 }
@@ -9,18 +10,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include w (1024){
+
+    @include w (1024) {
         flex-direction: column;
         padding-bottom: rem(30);
     }
+
     &__title {
         width: calc(100% / 12 * 6);
-        @include w (1024){
+
+        @include w (1024) {
             width: 100%;
             font-size: rem(40);
             line-height: rem(38);
             padding-bottom: rem(30);
         }
+
         font-family:$dm;
         font-weight: bold;
         font-size: rem(60);
@@ -28,11 +33,14 @@
         color: #19191B;
 
     }
+
     &__btns {
-        width:calc(100% / 12 * 4);
-        @include w (1024){
+        width: calc(100% / 12 * 4);
+
+        @include w (1024) {
             width: auto;
         }
+
         background: #F7F7FB;
         border-radius: 10px;
         display:flex;
@@ -40,8 +48,9 @@
         padding-bottom: rem(5);
         padding-left: rem(5);
         padding-right: rem(5);
-        
+
     }
+
     &__yearly {
         border-radius: 10px 0px 0px 10px;
         padding-top: rem(18);
@@ -49,6 +58,7 @@
         padding-left: rem(57);
         padding-right: rem(57);
     }
+
     &__monthly {
         padding-top: rem(18);
         padding-bottom: rem(18);
@@ -57,7 +67,7 @@
     }
 }
 
-.price--active{
+.price--active {
     background: #5454D4;
     color: #fff;
     border-radius: 10px 0px 0px 10px;
@@ -65,11 +75,66 @@
 
 .price-top-btn {
     cursor: pointer;
-    font-family:$dm;
+    font-family: $dm;
     font-weight: bold;
     font-size: rem(16);
     line-height: rem(21);
     color: #19191B;
+}
+
+.card-info {
+    &__btn {}
+}
+
+.price-bottom {
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        padding-top: rem(100);
+
+        @include w(1024) {
+            padding-top: rem(30);
+            flex-direction: column;
+        }
+
+    }
+}
+
+.price-card {
+    text-align: center;
+    width: calc(100% /12 * 4 - 18px);
+
+    &__calegory {
+        font-family: $dm;
+        font-size: rem(18);
+        line-height: rem(28);
+        color: #696871;
+        padding-bottom: rem(22);
+    }
+
+    &__gb {}
+
+    &__info {
+        font-weight: normal;
+        font-size: rem(17);
+        line-height: rem(50);
+        color: #696871;
+        padding-bottom: rem(36);
     }
 
 
+    &__price {
+        font-family: $dm;
+        font-style: normal;
+        font-weight: bold;
+        font-size: rem(60);
+        line-height: rem(56);
+        color: #1D293F;
+        padding-bottom: rem(28);
+    }
+
+    &__site {}
+
+    &__support {}
+}
