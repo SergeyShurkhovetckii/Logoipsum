@@ -83,7 +83,15 @@
 }
 
 .card-info {
-    &__btn {}
+    &__btn {
+        color: #5454D4;
+        background: #FFFFFF;
+        border-radius: 10px;
+        padding-top: rem(19);
+        padding-bottom: rem(19);
+        width:rem(285);
+        margin:  0 auto;
+    }
 }
 
 .price-bottom {
@@ -95,6 +103,12 @@
 
         @include w(1024) {
             padding-top: rem(30);
+            :last-child{
+                margin-top: rem(30);
+            }
+            
+        }
+        @include w(768){
             flex-direction: column;
         }
 
@@ -102,8 +116,21 @@
 }
 
 .price-card {
+    cursor: pointer;
+    background: #F8F8F8;
+    border-radius: 10px;
     text-align: center;
     width: calc(100% /12 * 4 - 18px);
+    padding-top:rem(35);
+    padding-bottom: rem(27);
+    @include w (1024){
+        width: calc(50% - 10px);
+    }
+
+    @include w (768){
+        width:100%;
+        margin-bottom: rem(30);
+    }
 
     &__calegory {
         font-family: $dm;
@@ -138,3 +165,8 @@
 
     &__support {}
 }
+.price-card:hover{
+    transition: 0.5s;
+    background: #FF7143;
+}
+
