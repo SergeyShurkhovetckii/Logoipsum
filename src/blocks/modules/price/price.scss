@@ -1,8 +1,10 @@
 .price {
     margin-top: rem(150);
+    padding-bottom: rem(175);
 
     @include w (768) {
         margin-top: rem(30);
+        padding-bottom: rem(100);
     }
 }
 
@@ -89,8 +91,8 @@
         border-radius: 10px;
         padding-top: rem(19);
         padding-bottom: rem(19);
-        width:rem(285);
-        margin:  0 auto;
+        width: rem(285);
+        margin: 0 auto;
     }
 }
 
@@ -103,12 +105,14 @@
 
         @include w(1024) {
             padding-top: rem(30);
-            :last-child{
+
+            :last-child {
                 margin-top: rem(30);
             }
-            
+
         }
-        @include w(768){
+
+        @include w(768) {
             flex-direction: column;
         }
 
@@ -121,14 +125,15 @@
     border-radius: 10px;
     text-align: center;
     width: calc(100% /12 * 4 - 18px);
-    padding-top:rem(35);
+    padding-top: rem(35);
     padding-bottom: rem(27);
-    @include w (1024){
+
+    @include w (1024) {
         width: calc(50% - 10px);
     }
 
-    @include w (768){
-        width:100%;
+    @include w (768) {
+        width: 100%;
         margin-bottom: rem(30);
     }
 
@@ -140,8 +145,6 @@
         padding-bottom: rem(22);
     }
 
-    &__gb {}
-
     &__info {
         font-weight: normal;
         font-size: rem(17);
@@ -149,6 +152,7 @@
         color: #696871;
         padding-bottom: rem(36);
     }
+
 
 
     &__price {
@@ -161,12 +165,24 @@
         padding-bottom: rem(28);
     }
 
-    &__site {}
 
-    &__support {}
+    &__span {
+        font-family: $dm;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 56px;
+    }
 }
-.price-card:hover{
-    transition: 0.5s;
+
+.change {
     background: #FF7143;
 }
 
+.white{
+    color: #fff;
+}
+
+.card-btn--hover{
+    background: #9F3919;
+    color:#fff;
+}
