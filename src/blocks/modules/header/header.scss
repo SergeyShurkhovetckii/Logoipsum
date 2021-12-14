@@ -1,6 +1,7 @@
 .header-scroll {
     width: 100%;
     padding-top: rem(40);
+    transition: 0.2s;
     @include w(1440) {
         padding-top: rem(20);
     }
@@ -97,12 +98,12 @@
     width: 100%;
     z-index: 100;
     transition: 0.2s;
-    padding-top: rem(30);
+    padding-top: rem(10);
     padding-bottom: rem(10);
     background: #fff;
-    -webkit-box-shadow: 4px 10px 11px 1px rgba(25, 25, 27, 0.2);
-    -moz-box-shadow: 4px 10px 11px 1px rgba(25, 25, 27, 0.2);
-    box-shadow: 4px 10px 11px 1px rgba(25, 25, 27, 0.2);
+    -webkit-box-shadow: -2px 11px 8px -5px rgba(32, 33, 36, 0.2);
+    -moz-box-shadow: -2px 11px 8px -5px rgba(32, 33, 36, 0.2);
+    box-shadow: -2px 11px 8px -5px rgba(32, 33, 36, 0.2);
     @include w (1440){
         padding-top: rem(20);
     }

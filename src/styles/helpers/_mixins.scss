@@ -9,3 +9,12 @@
 		@content
 	}
 }
+
+
+@function rem($size) {
+	@return $size / $root-font-size * 1rem;
+}
+
+$rem-baseline: 16px !default;
+$rem-fallback: false !default;
+$rem-px-only: false !default;

@@ -1,31 +1,37 @@
 .main {
     &__col {
         width: calc(50% - 40px);
-        @include w(1440){
-            width:50%;
+
+        @include w(1440) {
+            width: 50%;
         }
-        @include w(1024){
+
+        @include w(1024) {
             width: 50%;
             padding-top: rem(30);
         }
-        @include w(768){
+
+        @include w(768) {
             width: 100%;
         }
     }
 
     &__row {
-        display:flex;
+        display: flex;
         justify-content: space-between;
         align-items: center;
         margin-top: rem(100);
         padding-bottom: rem(100);
-        @include w(1024){
+
+        @include w(1024) {
             margin-top: rem(0);
             padding-bottom: rem(0);
         }
-        @include w(768){
+
+        @include w(768) {
             flex-direction: column-reverse;
         }
+
         // @include w(768){
         //     margin-top: rem(30);
         // }
@@ -34,18 +40,19 @@
 
 .main-text {
     &__arrow {
-        @include w(1024){
+        @include w(1024) {
             display: none;
             visibility: hidden;
         }
     }
 
     &__bottom {
-        display:flex;
+        display: flex;
         align-items: center;
         justify-content: space-between;
-        width: calc(100% / 6 * 4 );
-        @include w(1024){
+        width: calc(100% / 6 * 4);
+
+        @include w(1024) {
             width: 100%;
             justify-content: left;
         }
@@ -57,9 +64,11 @@
         padding-left: rem(65);
         padding-right: rem(65);
         color: #fff;
-        font-family :$dm;
+        font-family: $dm;
         font-weight: 700;
         font-size: 17px;
+        position: relative; // Это важно добавить 
+        overflow-x: hidden; // Это важно добавить 
     }
 
     &__text {
@@ -67,12 +76,36 @@
         line-height: 30px;
         color: #696871;
         padding-bottom: rem(80);
-        @include w(1024){
+
+        @include w(1024) {
             padding-bottom: rem(30);
         }
     }
 
     &__title {
         padding-bottom: rem(30);
+    }
+}
+
+
+.main-text__btn .flare {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transform: skewX(47deg);
+    animation: flareAnimation;
+    left: -150%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
+    animation: flareAnimation 3s infinite linear;
+}
+
+@keyframes flareAnimation {
+    0% {
+        left: -150%;
+    }
+
+    100% {
+        left: 150%;
     }
 }

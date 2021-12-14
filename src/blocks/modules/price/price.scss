@@ -175,6 +175,7 @@
 }
 
 .change {
+    transition:0.5s;
     background: #FF7143;
 }
 
@@ -184,5 +185,6 @@
 
 .card-btn--hover{
     background: #9F3919;
+    transition:0.5s;
     color:#fff;
 }
