@@ -1,7 +1,8 @@
 .subscription {
     margin-top: rem(150);
     @include w(1024){
-        margin-top: rem(30);
+        padding-top:rem(15);
+        margin-top: rem(0);
     }
     &__col {
         width:calc(50% - 165px);

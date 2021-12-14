@@ -1,55 +1,70 @@
-h1, h2, h3, h4, h5, h6, ul ,p{
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: 'Mulish', sans-serif;
     font-size: 20px;
     line-height: 30px;
     color: #696871;
 }
-img{
+
+img {
     width: 100%;
     height: auto;
 }
 
-li{
+img:hover {
+    opacity: 0.9;
+}
+
+li {
     list-style: none;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-a:hover{
+a:hover {
     opacity: 0.7;
 }
 
-h2{
+h2 {
     font-family: $dm;
     font-weight: bold;
     font-size: rem(80);
     line-height: rem(77);
     color: #19191B;
-    @include w(1024){
+
+    @include w(1024) {
         font-size: rem(40);
         line-height: rem(38);
     }
 }
 
-h3{
+h3 {
     font-family: $dm;
     font-weight: bold;
     font-size: rem(50);
     line-height: rem(57);
     color: #19191B;
-    @include w(1024){
+
+    @include w(1024) {
         font-size: rem(40);
         line-height: rem(38);
     }
 }
 
-h4{
+h4 {
     font-family: $dm;
     font-weight: bold;
     font-size: rem(24);
@@ -58,17 +73,19 @@ h4{
     color: #19191B;
 }
 
-.link{
+.link {
     cursor: pointer;
-    &--blue a{
+
+    &--blue a {
         color: #5454D4;
         font-family: $dm;
         font-style: normal;
         font-weight: bold;
         font-size: rem(17);
-        line-height: rem(22); 
+        line-height: rem(22);
     }
-    &--blue a:hover{
+
+    &--blue a:hover {
         color: #FF7143;
     }
 }
@@ -76,29 +93,31 @@ h4{
 
 .btn {
     cursor: pointer;
+
     &--orange {
         background: #FF7143;
         border-radius: 10px;
     }
-    &--blue{
+
+    &--blue {
         background: #5454D4;
         border-radius: 10px;
     }
-    &--white{
+
+    &--white {
         background: #EAE9F2;
         border-radius: 10px;
     }
+
     &--orange:hover {
         background: #5454D4;
         transition: 0.5s;
-        -webkit-box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
-        -moz-box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
-        box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
     }
-    &--blue:hover{
+
+    &--blue:hover {
         background: #F7F6FB;
         transition: 0.5s;
-        color:#19191B;
+        color: #19191B;
         -webkit-box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
         -moz-box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
         box-shadow: 0px 0px 11px 6px rgba(25, 25, 27, 0.2);
@@ -109,7 +128,5 @@ h4{
 
 .img-card {
     width: rem(150);
-    height:auto;
+    height: auto;
 }
-
-

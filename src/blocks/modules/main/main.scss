@@ -55,6 +55,7 @@
         @include w(1024) {
             width: 100%;
             justify-content: left;
+            padding-bottom: rem(15);
         }
     }
 
