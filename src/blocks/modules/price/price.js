@@ -1,7 +1,7 @@
 (function toggleTabs () {
 	const priceBtn = document.querySelectorAll('.price-top-btn');
 	const tab = document.querySelectorAll('.price-bottom');
-	// const select = document.querySelector('.children-page__mob-nav');
+	const select = document.querySelector('.price-top__mob-nav');
 
 	if (priceBtn && tab && (priceBtn.length == tab.length)) {
 		for (let i = 0; i < priceBtn.length; i++) {
@@ -12,12 +12,12 @@
 		}
 	}
 
-	// if (select) {
-	// 	select.addEventListener('change', function(e) {
-	// 		let item = select.value;
-	// 		changeActive(item);
-	// 	})
-	// }
+	if (select) {
+		select.addEventListener('change', function(e) {
+			let item = select.value;
+			changeActive(item);
+		})
+	}
 
 	function changeActive(n) {
 		for (let i = 0; i < priceBtn.length; i++) {
@@ -31,9 +31,9 @@
 })();
 
 
-(() => {
+(function () {
     document.addEventListener('DOMContentLoaded', () => {
-        let button = document.querySelectorAll('.price-card');
+        let button = document.querySelectorAll('[data-button]');
         let font = document.querySelectorAll('.font');
         let price = document.querySelectorAll('.price-card__price');
         let priceSpan = document.querySelectorAll('.price-card__span');
