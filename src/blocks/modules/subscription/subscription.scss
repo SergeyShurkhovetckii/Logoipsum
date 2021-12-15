@@ -1,31 +1,31 @@
 .subscription {
-    margin-top: rem(150);
-    @include w(1024){
-        padding-top:rem(15);
+    @include w(1024) {
+        padding-top: rem(15);
         margin-top: rem(0);
     }
+    margin-top: rem(150);
     &__col {
-        width:calc(50% - 165px);
-        @include w (1440){
-            width:calc(50% - 60px);
+        @include w (1440) {
+            width: calc(50% - 60px);
         }
-        @include w(1024){
+        @include w(1024) {
             width: 50%;
         }
-        @include w(768){
-            width:100%;
+        @include w(768) {
+            width: 100%;
             padding-bottom: rem(30);
         }
+        width: calc(50% - 165px);
     }
     
     &__row {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        align-items: center;
-        @include w (768){
+        @include w (768) {
             flex-direction: column;
         }
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__text {

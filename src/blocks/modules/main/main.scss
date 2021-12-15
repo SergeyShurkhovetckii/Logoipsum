@@ -1,6 +1,5 @@
 .main {
     &__col {
-        width: calc(50% - 40px);
 
         @include w(1440) {
             width: 50%;
@@ -14,14 +13,10 @@
         @include w(768) {
             width: 100%;
         }
+        width: calc(50% - 40px);
     }
 
     &__row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: rem(100);
-        padding-bottom: rem(100);
 
         @include w(1024) {
             margin-top: rem(0);
@@ -31,6 +26,11 @@
         @include w(768) {
             flex-direction: column-reverse;
         }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: rem(100);
+        padding-bottom: rem(100);
 
         // @include w(768){
         //     margin-top: rem(30);
@@ -47,16 +47,16 @@
     }
 
     &__bottom {
+
+        @include w(1024) {
+            justify-content: left;
+            width: 100%;
+            padding-bottom: rem(15);
+        }
         display: flex;
         align-items: center;
         justify-content: space-between;
         width: calc(100% / 6 * 4);
-
-        @include w(1024) {
-            width: 100%;
-            justify-content: left;
-            padding-bottom: rem(15);
-        }
     }
 
     &__btn {
@@ -73,14 +73,14 @@
     }
 
     &__text {
-        font-size: 20px;
-        line-height: 30px;
-        color: #696871;
-        padding-bottom: rem(80);
 
         @include w(1024) {
             padding-bottom: rem(30);
         }
+        font-size: 20px;
+        line-height: 30px;
+        color: #696871;
+        padding-bottom: rem(80);
     }
 
     &__title {
@@ -92,13 +92,13 @@
 .main-text__btn .flare {
     position: absolute;
     top: 0;
-    height: 100%;
+    left: -150%;
     width: 100%;
+    height: 100%;
     transform: skewX(47deg);
     animation: flareAnimation;
-    left: -150%;
-    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
     animation: flareAnimation 3s infinite linear;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.4));
 }
 
 @keyframes flareAnimation {

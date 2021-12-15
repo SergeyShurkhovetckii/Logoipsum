@@ -1,17 +1,17 @@
 .cards {
-    margin-top: rem(138);
-    @include w(768){
+    @include w(768) {
         margin-top: rem(30);
     }
+    margin-top: rem(138);
 
     &__card {
-        text-align: center;
-        width: calc(33% - 35px);
 
         @include w (768) {
             width: 100%;
             padding-bottom: rem(30);
         }
+        text-align: center;
+        width: calc(33% - 35px);
     }
 
     &__img {
@@ -19,12 +19,12 @@
     }
 
     &__row {
-        display: flex;
-        justify-content: space-between;
 
         @include w(768) {
             flex-direction: column;
         }
+        display: flex;
+        justify-content: space-between;
     }
 
     &__text {
@@ -38,6 +38,5 @@
     &__title {
 
         padding-bottom: rem(20);
-
     }
 }

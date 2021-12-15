@@ -1,26 +1,26 @@
 .back-to-top {
+    @include w (1024) {
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+    box-sizing: border-box;
+    display: none;
     position: fixed;
-    bottom: 80px;
-    right: 40px;
     z-index: 9999;
+    right: 40px;
+    bottom: 80px;
     width: rem(40);
     height: rem(40);
     text-align: center;
-    line-height:rem(40);
-    background: #FF7143;
+    line-height: rem(40);
+    background: #ff7143;
     color: #fff;
-    box-sizing: border-box;
     cursor: pointer;
-    display: none;
-    @include w (1024){
-        bottom: 0;
-        left: 0;
-        width:100%;
-    }
 }
 
 .back-to-top:hover {
-    background: #5454D4;
+    background: #5454d4;
     color: #fff;
 }
 
@@ -31,5 +31,8 @@
     background-color: #696871;
     color: #fff;
     text-align: center;
-    padding-bottom: rem(40);
+    @include w (1024){
+        padding-bottom: rem(40);
+    }
+    
 }

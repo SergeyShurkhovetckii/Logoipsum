@@ -1,12 +1,11 @@
 .depth {
-    margin-top: rem(83);
 
     @include w(1024) {
         margin-top: rem(30);
     }
+    margin-top: rem(83);
 
     &__col {
-        width: calc(50% - 60px);
 
         @include w (1440) {
             width: calc(50% - 30px);
@@ -20,15 +19,16 @@
             width: 100%;
             padding-bottom: rem(30);
         }
+        width: calc(50% - 60px);
     }
 
     &__row {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        @include w (768){
+        @include w (768) {
             flex-direction: column-reverse;
         }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 
     &__text {
