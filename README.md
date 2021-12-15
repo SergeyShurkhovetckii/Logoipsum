@@ -1,2 +1,2 @@
 # Logoipsum
-<video src="Desktop.mp4"></video>
+<img src="screencapture.png" alt="Скриншот">
