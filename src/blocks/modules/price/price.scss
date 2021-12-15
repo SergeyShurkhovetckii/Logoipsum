@@ -54,7 +54,7 @@
     }
 
     &__yearly {
-        border-radius: 10px 0px 0px 10px;
+        
         padding-top: rem(18);
         padding-bottom: rem(18);
         padding-left: rem(57);
@@ -69,11 +69,6 @@
     }
 }
 
-.price--active {
-    background: #5454D4;
-    color: #fff;
-}
-
 .price-top-btn {
     cursor: pointer;
     font-family: $dm;
@@ -81,7 +76,27 @@
     font-size: rem(16);
     line-height: rem(21);
     color: #19191B;
+    background: #F7F6FB;
+    border-radius: 10px 10px 10px 10px;
+
+    &--active {
+        transition: 0.5s;
+        background: #5454D4;
+        color: #fff;
+    }
 }
+
+
+.price-bottom {
+    display: none;
+
+    &--active {
+        transition: 0.5s;
+        display: block;
+    }
+}
+
+
 
 .card-info {
     &__btn {
@@ -96,14 +111,19 @@
 }
 
 .price-bottom {
+    padding-top: rem(100);
+
+    @include w (1024) {
+        padding-top: rem(30);
+    }
+
     &__row {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        padding-top: rem(100);
 
         @include w(1024) {
-            padding-top: rem(30);
+            // padding-top: rem(30);
 
             :last-child {
                 margin-top: rem(30);
@@ -174,16 +194,16 @@
 }
 
 .change {
-    transition:0.5s;
+    transition: 0.5s;
     background: #FF7143;
 }
 
-.white{
+.white {
     color: #fff;
 }
 
-.card-btn--hover{
+.card-btn--hover {
     background: #9F3919;
-    transition:0.5s;
-    color:#fff;
+    transition: 0.5s;
+    color: #fff;
 }
