@@ -1,0 +1,29 @@
+.back-to-top {
+    position: fixed;
+    bottom: 80px;
+    right: 40px;
+    z-index: 9999;
+    width: rem(40);
+    height: rem(40);
+    text-align: center;
+    line-height:rem(40);
+    background: #FF7143;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+    display: none;
+    @include w (1024){
+        bottom: 0;
+        left: 0;
+        width:100%;
+    }
+}
+
+.back-to-top:hover {
+    background: #5454D4;
+    color: #fff;
+}
+
+.back-to-top--open {
+    display: block;
+}
